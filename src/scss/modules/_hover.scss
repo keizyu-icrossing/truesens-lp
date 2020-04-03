@@ -1,5 +1,5 @@
 /*---------------*/
-/***** Chico *****/
+/***** hoverEffect *****/
 /*---------------*/
 
 .hoverEffect {
@@ -9,14 +9,13 @@
 
     figure {
     	position: relative;
-    	float: left;
     	overflow: hidden;
     	margin: 0;
     	background: #000;
     	text-align: center;
     	cursor: pointer;
 
-        img {
+        > img {
         	position: relative;
         	display: block;
         	min-height: 100%;
@@ -29,7 +28,6 @@
         	color: #fff;
         	text-transform: uppercase;
         	font-size: 1.25em;
-        	-webkit-backface-visibility: hidden;
         	backface-visibility: hidden;
 
             &::before,
@@ -49,63 +47,64 @@
 
 
     }
+
+    &-heading {
+        position: absolute;
+        top: 0;
+        color: $white;
+        margin: 0;
+        left: 2rem;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin: 1rem 0;
+    }
 }
 
-figure h2,
-.hoverEffect figure p {
-	margin: 0;
-}
+.effect-chico {
+    > img {
+    	transition: opacity 0.35s, transform 0.35s;
+    	transform: scale(1.12);
+    }
 
-figure.effect-chico > img {
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(1.12);
-	transform: scale(1.12);
-}
+    &:hover {
+        > img {
+        	opacity: 0.3;
+        	transform: scale(1);
+        }
 
-figure.effect-chico:hover > img {
-	opacity: 0.3;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
+        figcaption::before,
+        .play  {
+        	opacity: 1;
+        	transform: scale(1);
+        }
 
-figure.effect-chico figcaption {
-	padding: 3em;
-}
+    }
 
-figure.effect-chico figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	content: '';
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
+    figcaption {
+    	// padding: 3em;
+        &::before {
+        	position: absolute;
+        	content: '';
+        	transform: scale(1.1);
+            opacity: 0;
+        	transition: opacity 0.35s, transform 0.35s;
+        }
 
-figure.effect-chico figcaption::before,
-figure.effect-chico p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
+        .play {
+            opacity: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: transparent url(../img/play-button.png) no-repeat center center;
+            background-size: 160px;
+            transition: opacity 0.35s, transform 0.35s;
+            transform: scale(1.5);
+        }
 
-figure.effect-chico p {
-	margin: 0 auto;
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-}
+    }
 
-figure.effect-chico p img {
-    width: 160px;
-    height: 160px;
-    margin: 6rem auto 0;
-}
-
-figure.effect-chico:hover figcaption::before,
-figure.effect-chico:hover p {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
 }
