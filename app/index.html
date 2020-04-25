@@ -2,23 +2,29 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>True Sens</title>
+    <title>Conoce los purificadores de aire TruSens</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="TruSens es la marca de purificadores de aire que protege tu hogar, gracias a sus distintos modelos y a la tecnología exclusiva que te ayudacon sus filtros a eliminar bacterias y virus del ambiente.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="stylesheet" href="assets/components/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/components/modal/jquery.fancybox.min.css">
     <link href="assets/css/style.min.css" rel="stylesheet">
 
+    <!-- HTML5 Shim for IE -->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
     <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
+
     <header class="header" role="banner">
       <div class="logo">
-        <img src="assets/img/TruSens_Logo.png" alt="">
+        <img src="assets/img/Logo-TruSens.svg" alt="">
       </div>
       <nav class="nav" role="navigation">
         <ul>
@@ -31,9 +37,11 @@
 
     <main class="main" role="main">
         <section class="hero-banner">
-            <div class="hero-banner__wrapper wrapper">
-                <h1>Protege a tu familia con los purificadores de aire TrueSens</h1>
-                <h6>Únicos con la tecnología de 3 filtros activos, los cuales ayudan a disminuir las partículas tóxicas en el ambiente</h6>
+            <div class="container">
+                <div class="hero-banner__wrapper wrapper">
+                    <h1>Protege a tu familia con los purificadores de aire TruSens.
+                    <h6>Únicos con la tecnología de 3 filtros activos,los cuales ayudan a disminuir las partículas tóxicas en el ambiente.</h6>
+                </div>
             </div>
         </section>
         <section class="hero-slider light-grey-bkg">
@@ -42,15 +50,33 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="assets/img/slider/slide-1.jpg" alt="">
+                        <img src="assets/img/slider/hero/Mama-ensena-a-su-hija-habitos-de-higiene.png" alt="Mama-enseña-a-su-hija-hábitos-de-higiene">
                         <div class="swiper-slide__content">
-                            <h2>¿Cómo me ayuda TrueSens a cuidar a mi familia?</h2>
+                            <h2>¿Cómo me ayuda TruSens a cuidar a mi familia?</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/img/slider/slide-1.jpg" alt="">
+                        <img src="assets/img/slider/hero/Mujer-arreglando-un-florero-en-su-casa.png" alt="Mujer-arreglando-un-florero-en-su-casa">
                         <div class="swiper-slide__content">
-                            <h2>¿Cómo me ayuda TrueSens a cuidar a mi familia?</h2>
+                            <h2>Disminuye síntomas de alergias y enfermedades respiratorias</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/slider/hero/Pareja-feliz-acariciando-a-su-perro.png" alt="Pareja-feliz-acariciando-a-su-perro">
+                        <div class="swiper-slide__content">
+                            <h2>Atrapa el pelo de mascotas que se queda en el aire.</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/slider/hero/Joven-haciendo-ejercicio-en-el-hogar.png" alt="Joven-haciendo-ejercicio-en-el-hogar">
+                        <div class="swiper-slide__content">
+                            <h2>Se adaptaa tu estilo de vida saludable.</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/slider/hero/Pareja-ensenando-a-caminar-a-su-hijo.png" alt="Pareja-enseñando-a-caminar-a-su-hijo">
+                        <div class="swiper-slide__content">
+                            <h2>Purifica el aire de tu hogar.</h2>
                         </div>
                     </div>
                 </div>
@@ -59,141 +85,262 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
-        <section class="light-grey-bkg padding-top-6">
-            <div class="container">
+
+        <section class="video-top light-grey-bkg">
+
                 <div class="hoverEffect row">
-                    <div class="column padding-2">
-                        <figure class="effect-chico">
-            				<img src="assets/img/video-1.jpg" alt="img15">
-                            <h3 class="hoverEffect-heading">Contribuye a eliminar bacterias, polvo,<br class="hide-on-small-only" />ácaros y virus.</h3>
-                            <figcaption>
-                                <div class="play"></div>
-            				</figcaption>
-            			</figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="light-grey-bkg">
-            <div class="container">
-                <div class="hoverEffect row">
-                    <div class="column padding-2">
-                        <figure class="effect-chico">
-            				<img src="assets/img/video-2.jpg" alt="img15">
+                    <div class="column">
+                        <a data-fancybox href="#video1">
+                            <figure class="effect-chico">
+                				<img src="assets/img/video-1.jpg" alt="Descubre-cómo-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones">
+                                <h3 class="hoverEffect-heading">Contribuye a eliminar bacterias, polvo y virus.</h3>
                                 <figcaption>
                                     <div class="play"></div>
                 				</figcaption>
-            			</figure>
-                        <h3>Exclusivo filtro<br class="hide-on-small-only" />de lámpara UV.</h3>
-                    </div>
-                    <div class="column padding-2">
-                        <figure class="effect-chico">
-            				<img src="assets/img/video-3.jpg" alt="img15">
-            				<figcaption>
-                                <div class="play"></div>
-            				</figcaption>
-            			</figure>
-                        <h3>Único con 3 filtros <br class="hide-on-small-only" />y 6 velocidades.</h3>
+                			</figure>
+                        </a>
                     </div>
                 </div>
-            </div>
+
         </section>
-        <section class="white-bkg main-section">
+
+        <video width="640" height="320" controls id="video1" style="display:none;">
+            <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.mp4" type="video/mp4">
+            <!-- <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.webm" type="video/webm">
+            <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.ogv" type="video/ogg"> -->
+            Your browser doesn't support HTML5 video tag.
+        </video>
+        <video width="640" height="320" controls id="video2" style="display:none;">
+            <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.mp4" type="video/mp4">
+            <!-- <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.webm" type="video/webm">
+            <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.ogv" type="video/ogg"> -->
+            Your browser doesn't support HTML5 video tag.
+        </video>
+        <video width="640" height="320" controls id="video3" style="display:none;">
+            <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.mp4" type="video/mp4">
+            <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.webm" type="video/webm">
+            <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.ogv" type="video/ogg">
+            Your browser doesn't support HTML5 video tag.
+        </video>
+
+        <section class="video-bottom light-grey-bkg">
+
+                <div class="hoverEffect row">
+                        <div class="column">
+                            <a data-fancybox href="#video2">
+                                <figure class="effect-chico">
+                    				<img src="assets/img/video/video-2.jpg" alt="Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus">
+                                        <figcaption>
+                                            <div class="play"></div>
+                        				</figcaption>
+                    			</figure>
+                            </a>
+                            <h3>Potente lámpara UV.</h3>
+                        </div>
+
+                    <div class="column">
+                        <a data-fancybox href="#video3">
+                            <figure class="effect-chico">
+                				<img src="assets/img/video/video-3.jpg" alt="Filtro-Dupont-que-ayuda-a-atrapar-partículas">
+                				<figcaption>
+                                    <div class="play"></div>
+                				</figcaption>
+                			</figure>
+                        </a>
+                        <h3>Filtro 3 en 1.</h3>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="product-slider white-bkg main-section padding-bottom-8">
             <div class="light-grey-bkg section-bkg">
                 <img src="assets/img/pleca-blanca.png" alt="">
             </div>
             <div class="container">
                 <div class="wrapper">
-                    <h2>Conoce cómo TruSens mejora el aire que respiras en tu hogar</h2>
-                    <div class="imgBanner">
-                        <img src="assets/img/seccion-img.png" alt="">
-                    </div>
-                    <p>En TruSens hemos creado purificadores de aire que combinan distintas tecnologías para que puedas estar tranquilo de que proteges tus espacios con aire puro. </p>
-                    <p>Conoce todas las características de cada uno de nuestros modelos.</p>
-                    <div class="product-slider">
-                        <div class="swiper-container">
+                    <div class="">
+
+                        <div class="swiper-container gallery-top">
+                          <div class="swiper-wrapper">
+
+                              <div class="swiper-slide ">
+                                  <h2>Conoce cómo TruSens mejora el aire que respiras en tu hogar.</h2>
+                                  <div class="imgBanner">
+                                      <img src="assets/img/slider/product/1-Mama-con-su-hijo-respirando-aire-puro.png" alt="Mamá-con-su-hijo-respirando-aire-puro">
+                                  </div>
+
+                                  <p>En TruSens creamos purificadores de aire que combinan distintas tecnologías para que puedas estar tranquilo de que proteges tus espacios con aire puro.</p>
+                                  <p>Conoce las características de cada uno de nuestros modelos.</p>
+                              </div>
+
+                              <div class="swiper-slide">
+                                  <h2>Modelo Z1000, para espacios pequeños.</h2>
+                                  <div class="imgBanner">
+                                      <img src="assets/img/slider/product/2-Purificador-de-aire-TruSens-Z1000-para-habitaciones-pequenas.png" alt="Purificador-de-aire-TruSens-Z1000-para-habitaciones-pequeñas">
+                                  </div>
+                                  <p>Complementa tu estilo de vida saludable con TruSens Z1000, el purificador de aire perfecto que se adapta a tu hogar y te ayuda a eliminar ácaros, gases tóxicos y malos olores. ¡Respira la diferencia!</p>
+                              </div>
+
+                              <div class="swiper-slide">
+                                  <h2>Modelo Z2000, ideal para habitaciones medianas.</h2>
+                                  <div class="imgBanner">
+                                      <img src="assets/img/slider/product/3-Purificador-de-aire-TruSens-Z2000-para-habitaciones-medianas.png" alt="Purificador-de-aire-TruSens-Z2000-para-habitaciones-medianas">
+                                  </div>
+                                  <p>Ayuda a que tus espacios estén libres de gérmenes, bacterias y virus. Además, puedes medir la calidad del aire en cada rincón de tus habitaciones con el SensorPod. Tecnología al cuidado de tu salud.</p>
+                              </div>
+
+                              <div class="swiper-slide">
+                                  <h2>Modelo Z3000, para los espacios más grandes.</h2>
+                                  <div class="imgBanner">
+                                      <img src="assets/img/slider/product/4-Purificador-de-aire-TruSens-Z3000-para-habitaicones-grandes.png" alt="Purificador-de-aire-TruSens-Z3000-para-habitaicones-grandes">
+                                 </div>
+                                 <p>Reduce los síntomas de alergias de tu familia con el purificador de aire Z3000 que, junto al SensorPod, te permiten medir en tiempo real la calidad del aire y ajustar la velocidad o el nivel en el que TruSens trabaje.</p>
+                              </div>
+
+                              <div class="swiper-slide">
+                                  <h2>Filtro de carbón</h2>
+                                  <div class="imgBanner">
+                                      <img src="assets/img/slider/product/5-Filtros-TruSens-para-proteger-tu-hogar.png" alt="Filtros-TruSens-para-proteger-tu-hogar">
+                                  </div>
+                                  <p>El filtro de carbón es la primera barrera de defensa frente al polvo y pelo de mascotas, además de que ayuda a eliminar gases y malos olores del ambiente.</p>
+                              </div>
+
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="swiper-container gallery-thumbs">
 
                             <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-1.jpg" alt="">
+                                <div class="swiper-slide swiper-slide-thumb-active">
+                                    <img src="assets/img/slider/product/Miniatura-Producto-1.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-2.jpg" alt="">
+                                    <img src="assets/img/slider/product/Miniatura-Producto-2.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-3.jpg" alt="">
+                                    <img src="assets/img/slider/product/Miniatura-Producto-3.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-4.jpg" alt="">
+                                    <img src="assets/img/slider/product/Miniatura-Producto-4.png" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-1.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-2.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-3.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/slider/product/product-4.jpg" alt="">
+                                    <img src="assets/img/slider/product/Miniatura-Producto-5.png" alt="">
                                 </div>
                             </div>
-
-                            <div class="swiper-pagination"></div>
                         </div>
-                    </div>
-                </div
-            </div>
 
-        </section>
-        <section class="padding-bottom-8">
-            <div class="wrapper">
-                <h2 class="h2 margin-top-2">Adquiérelos en</h2>
-                <div class="row">
-                    <div class="column margin-right-1">
-                        <button class="button button--antiman">Amazon</button>
+
                     </div>
-                    <div class="column margin-left-1">
-                        <button class="button button--antiman">Mercado Libre</button>
+                    <div class="">
+                        <h2 class="h2 margin-top-2">Adquiérelo en:</h2>
+                        <div class="row">
+                            <div class="column margin-right-1">
+                                <button class="button button--antiman">Amazon</button>
+                            </div>
+                            <div class="column margin-left-1">
+                                <button class="button button--antiman">Mercado Libre</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
-        <section class="light-grey-bkg padding-top-1 padding-bottom-1">
+        <section class="grey-banner light-grey-bkg padding-top-1 padding-bottom-1">
             <div class="wrapper">
-                <h2 class="h2">Haz tu hogar más saludable con NUESTROS PURIFICADORES DE AIRE.</h2>
+                <h2 class="h2">Haz tu hogar más saludable con nuestros purificadores de aire.</h2>
             </div>
         </section>
-        <section>
+        <section class="testimonials">
             <div class="blockquote-slider">
                 <div class="swiper-container">
 
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <div class="swiper-slide__image">
-                                <img src="assets/img/blockquote-image.jpg" alt="">
+                            <div class="swiper-slide__image" style="background-image: url(assets/img/slider/testimoniales/Familia-que-respira-aire-puro-vive-mejor.png)">
+
                             </div>
                             <div class="swiper-slide__content">
-                                <h2>“Realmente siento la diferencia en la calidad del aire, no hay estornudos o tos matutina como antes.”</h2>
+                                <h2>“Realmente siento la diferencia en la calidad del aire, no hay estornudos matutinos como antes”</h2>
                                 <div class="swiper-slide__content--author">- Nicole, Amazon USA </div>
                                 <div class="swiper-slide__content--stars">
-                                    <img src="assets/img/blockquote-star.png" alt="">
-                                    <img src="assets/img/blockquote-star.png" alt="">
-                                    <img src="assets/img/blockquote-star.png" alt="">
-                                    <img src="assets/img/blockquote-star.png" alt="">
-                                    <img src="assets/img/blockquote-star.png" alt="">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
-                            <div class="swiper-slide__image">
-                                <img src="assets/img/video-2.jpg" alt="">
+                            <div class="swiper-slide__image" style="background-image:url(assets/img/slider/testimoniales/Mujer-disfrutando-sin-sintomas-de-alergias.png)">
+
                             </div>
                             <div class="swiper-slide__content">
-                                <h2>¿Cómo me ayuda TrueSens a cuidar a mi familia?</h2>
+                                <h2>“Soy asmática, compré el purificador y en un par de semanas mis síntomas disminuyeron en gran medida, me siento muy agradecida ”</h2>
+                                <div class="swiper-slide__content--author">- Ashley, Canadá</div>
+                                <div class="swiper-slide__content--stars">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__image"  style="background-image: url(assets/img/slider/testimoniales/Adultos-mayores-disfrutando-de-leer-un-libro.png)">
+
+                            </div>
+                            <div class="swiper-slide__content">
+                                <h2>“Mi esposa sufría de alergias, no paraba de estornudar y toser todo el día, escuchamos hablar de éste purificador de aire y ha resultado una maravilla. Ahora duerme tranquila y disfruta el tiempo que pasa en casa”</h2>
+                                <div class="swiper-slide__content--author">- Samm, USA</div>
+                                <div class="swiper-slide__content--stars">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__image" style="background-image: url(assets/img/slider/testimoniales/Mujer-conviviendo-con-sus-mascotas-sin-alergias.png)">
+
+                            </div>
+                            <div class="swiper-slide__content">
+                                <h2>“Tenemos dos perros que sueltan pelo en cada momento, el purificador de aire me ha ayudado a no tener que limpiar todo el tiempo”</h2>
+                                <div class="swiper-slide__content--author">- Holly, USA</div>
+                                <div class="swiper-slide__content--stars">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__image" style="background-image: url(assets/img/slider/testimoniales/Mamá-jugando-con-su-bebe-en-un-ambiente-saludable.png)">
+
+                            </div>
+                            <div class="swiper-slide__content">
+                                <h2>“Me parece un excelente purificador de aire, con tecnología de fácil uso que se acomoda a mi hogar”</h2>
+                                <div class="swiper-slide__content--author">- Britta, Amazon  USA</div>
+                                <div class="swiper-slide__content--stars">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                    <img src="assets/img/blockquote-star.png" alt="star">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -202,14 +349,29 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
-        <h2>Conoce más información sobre nosotros. Descubre más en nuestras redes sociales o en nuestra web.</h2>
+        <div class="container">
+            <div class="wrapper">
+                <div>
+                    <h2>Conoce más información sobre nosotros.<br />Descubre más en nuestras redes sociales o<br class="hide-on-small-only" /> en nuestra web.</h2>
+                </div>
+                <div>
+                    <ul class="footer-social">
+                        <li><img src="assets/img/facebook-icon.png" alt="Logo-Facebook"/></li>
+                        <li><img src="assets/img/instagram-icon.png" alt="Logo-Instagram"/></li>
+                        <li><img src="assets/img/truesens-icon.png" alt="Logo-TruSens"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/components/swiper/swiper.min.js"></script>
+    <script src="assets/components/modal/jquery.fancybox.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
   </body>
