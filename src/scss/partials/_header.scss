@@ -1,11 +1,12 @@
 .header {
     background-color: $brand-primary;
     height: 73px;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
-    position: relative;
-
+    position: fixed;
+    top: 0;
 }
+
 .logo {
     padding: 2rem 0 0 1rem;
     float: left;

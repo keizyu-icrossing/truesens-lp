@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/components/swiper/swiper.min.css">
     <link rel="stylesheet" href="assets/components/modal/jquery.fancybox.min.css">
     <link href="assets/css/style.min.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 
     <!-- HTML5 Shim for IE -->
 	<!--[if IE]>
@@ -21,22 +22,60 @@
   </head>
   <body>
 
+      <div class="videos">
+          <video width="640" height="320" controls id="video1" style="display:none;">
+              <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.mp4" type="video/mp4">
+              <!-- <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.webm" type="video/webm">
+              <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.ogv" type="video/ogg"> -->
+              Your browser doesn't support HTML5 video tag.
+          </video>
+          <video width="640" height="320" controls id="video2" style="display:none;">
+              <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.mp4" type="video/mp4">
+              <!-- <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.webm" type="video/webm">
+              <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.ogv" type="video/ogg"> -->
+              Your browser doesn't support HTML5 video tag.
+          </video>
+          <video width="640" height="320" controls id="video3" style="display:none;">
+              <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.mp4" type="video/mp4">
+              <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.webm" type="video/webm">
+              <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.ogv" type="video/ogg">
+              Your browser doesn't support HTML5 video tag.
+          </video>
+      </div>
+
+
 
     <header class="header" role="banner">
       <div class="logo">
         <img src="assets/img/Logo-TruSens.svg" alt="">
       </div>
       <nav class="nav" role="navigation">
-        <ul>
-          <li>
-            <a href="/">Menú</a>
-          </li>
-        </ul>
+        <div id="menu" class="menu">
+            <a class="menu__button" href="#">
+                <span class="menu__text">MENÚ</span>
+            </a>
+            <div class="menu__open">
+                <div class="menu__open-inner">
+                    <button id="menu__close" class="menu__close"><i class="icon fa fa-fw fa-close"></i>Close</button>
+                    <ul class="menu__list">
+                        <li><a href="#como-ayuda">¿CÓMO ME AYUDA TRUSENS A CUIDAR  A MI FAMILIA?</a></li>
+                        <li><a href="#conoce-trusens">Conoce como trusens mejora el aire que respiras</a></li>
+                        <li><a href="#hogar-saludable">Haz tu hogar más saludable con TruSens</a></li>
+                    </ul>
+                    <hr />
+                    <ul class="menu__social">
+                        <li><a href=""><img src="assets/img/menu-facebook-icon.png" alt="Logo-Facebook"/></a></li>
+                        <li><a href=""><img src="assets/img/menu-instagram-icon.png" alt="Logo-Instagram"/></a></li>
+                        <li><a href=""><img src="assets/img/menu-truesens-icon.png" alt="Logo-TruSens"/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
       </nav>
     </header>
 
     <main class="main" role="main">
-        <section class="hero-banner">
+        <section id="como-ayuda" class="hero-banner">
             <div class="container">
                 <div class="hero-banner__wrapper wrapper">
                     <h1>Protege a tu familia con los purificadores de aire TruSens.
@@ -85,7 +124,6 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
-
         <section class="video-top light-grey-bkg">
 
                 <div class="hoverEffect row">
@@ -103,26 +141,6 @@
                 </div>
 
         </section>
-
-        <video width="640" height="320" controls id="video1" style="display:none;">
-            <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.mp4" type="video/mp4">
-            <!-- <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.webm" type="video/webm">
-            <source src="assets/video/Descubre-como-funciona-TruSens-para-purificar-el-aire-de-tus-habitaciones.ogv" type="video/ogg"> -->
-            Your browser doesn't support HTML5 video tag.
-        </video>
-        <video width="640" height="320" controls id="video2" style="display:none;">
-            <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.mp4" type="video/mp4">
-            <!-- <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.webm" type="video/webm">
-            <source src="assets/video/Lampara-ultravioleta-para-ayudar-a-eliminar-bacterias-y-virus.ogv" type="video/ogg"> -->
-            Your browser doesn't support HTML5 video tag.
-        </video>
-        <video width="640" height="320" controls id="video3" style="display:none;">
-            <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.mp4" type="video/mp4">
-            <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.webm" type="video/webm">
-            <source src="assets/video/Filtro-Dupont-que-ayuda-a-atrapar-particulas.ogv" type="video/ogg">
-            Your browser doesn't support HTML5 video tag.
-        </video>
-
         <section class="video-bottom light-grey-bkg">
 
                 <div class="hoverEffect row">
@@ -152,8 +170,7 @@
                 </div>
 
         </section>
-
-        <section class="product-slider white-bkg main-section padding-bottom-8">
+        <section id="conoce-trusens" class="product-slider white-bkg main-section padding-bottom-8">
             <div class="light-grey-bkg section-bkg">
                 <img src="assets/img/pleca-blanca.png" alt="">
             </div>
@@ -248,7 +265,7 @@
             </div>
 
         </section>
-        <section class="grey-banner light-grey-bkg padding-top-1 padding-bottom-1">
+        <section id="hogar-saludable" class="grey-banner light-grey-bkg padding-top-1 padding-bottom-1">
             <div class="wrapper">
                 <h2 class="h2">Haz tu hogar más saludable con nuestros purificadores de aire.</h2>
             </div>
@@ -360,9 +377,9 @@
                 </div>
                 <div>
                     <ul class="footer-social">
-                        <li><img src="assets/img/facebook-icon.png" alt="Logo-Facebook"/></li>
-                        <li><img src="assets/img/instagram-icon.png" alt="Logo-Instagram"/></li>
-                        <li><img src="assets/img/truesens-icon.png" alt="Logo-TruSens"/></li>
+                        <li><a href=""><img src="assets/img/facebook-icon.png" alt="Logo-Facebook"/></a></li>
+                        <li><a href=""><img src="assets/img/instagram-icon.png" alt="Logo-Instagram"/></a></li>
+                        <li><a href=""><img src="assets/img/truesens-icon.png" alt="Logo-TruSens"/></a></li>
                     </ul>
                 </div>
             </div>
@@ -372,6 +389,7 @@
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/components/swiper/swiper.min.js"></script>
     <script src="assets/components/modal/jquery.fancybox.min.js"></script>
+    <script src="assets/components/classie.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
   </body>

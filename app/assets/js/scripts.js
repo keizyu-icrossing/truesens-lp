@@ -60,6 +60,44 @@
       },
     });
 
+    // document.addEventListener('click', function(e) {
+    //     console.log('document click')
+	// 	var menu = document.getElementById('menu'),
+    //     menuText = document.getElementById('menu__text'),
+	// 	targetEl = e.target;  // clicked element
+    //
+	// 	do {
+	// 		if (targetEl == menu) {
+	// 			classie.add( menu, 'menu--active');
+	// 			return;
+	// 		}
+    //
+	// 	targetEl = targetEl.parentNode;
+    //
+	// 	} while (targetEl);
+    //
+    //
+	// 	classie.remove( menu, 'menu--active');
+	// });
+    //
+
+    [].slice.call(document.querySelectorAll('.menu')).forEach(function(el) {
+    	var openCtrl = el.querySelector('.menu__button'),
+    		closeCtrls = el.querySelectorAll('.menu__close');
+
+    	openCtrl.addEventListener('click', function(e) {
+            e.preventDefault();
+    		classie.add( el, 'menu--active' );
+    	});
+
+    	[].slice.call(closeCtrls).forEach(function(ctrl) {
+    		ctrl.addEventListener('click', function() {
+                console.log("close");
+    			classie.remove(el, 'menu--active');
+    		});
+    	});
+    });
+
 
   });
 
