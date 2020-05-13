@@ -1,7 +1,7 @@
 /*********************
   Media Query Classes
 **********************/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 520px) {
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important;
   }
@@ -13,13 +13,13 @@
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 521px) {
   .hide-on-med-and-up {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 520px) and (max-width: 992px) {
   .hide-on-med-only {
     display: none !important;
   }
@@ -49,19 +49,19 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 520px) and (max-width: 992px) {
   .show-on-medium {
     display: block !important;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 520px) {
   .show-on-small {
     display: block !important;
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 521px) {
   .show-on-medium-and-up {
     display: block !important;
   }
@@ -73,25 +73,8 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 520px) {
   .center-on-small-only {
     text-align: center;
   }
-}
-
-
-@media only screen and (min-width:320px) {
-
-}
-@media only screen and (min-width:480px) {
-
-}
-@media only screen and (min-width:601px) {
-
-}
-@media only screen and (min-width:993px) {
-
-}
-@media only screen and (min-width:1201px) {
-
 }

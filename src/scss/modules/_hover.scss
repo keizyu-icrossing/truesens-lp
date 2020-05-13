@@ -61,11 +61,11 @@
         font-size: 3rem;
         line-height: 1.2;
         margin: 1rem 0;
-		@media (max-width: 767px){
+		@include screen('med-small', 'max'){
 			font-size: 1.8rem;
 		}
-		@media (max-width: 520px){
-			font-size: 1.2rem;
+		@include screen('small', 'max'){
+			font-size: 1.4rem;
 		}
     }
 }

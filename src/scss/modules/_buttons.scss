@@ -14,6 +14,13 @@
   font-size: 2rem;
   letter-spacing: 1px;
   color: $white;
+  height: 60px;
+
+  @include screen('small', 'max') {
+      font-size: 1.2rem;
+      padding: 1rem;
+      height: auto;
+  }
 
   &:focus {
     outline: none;
@@ -26,7 +33,6 @@
   &--antiman {
     background: none;
     // border: 3px solid $brand-primary;
-    height: 60px;
 
     &::before, &::after {
       content: '';

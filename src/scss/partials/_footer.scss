@@ -10,8 +10,8 @@
     text-align: center;
     padding: 4rem 0;
 
-    @media (max-width: 520px){
-        font-size: 1.5rem;
+    @include screen('med-small', 'max'){
+        font-size: 1.2rem;
     }
 
     ul.footer-social {
@@ -24,7 +24,13 @@
         li {
             display: inline-block;
             vertical-align: center;
-            img { max-height: 55px }
+            img {
+                max-height: 55px;
+
+                @include screen('med-small', 'max'){
+                    max-height: 25px;
+                }
+            }
         }
 
     }
