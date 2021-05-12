@@ -17,6 +17,6 @@
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.8",
     "jshint": "^2.8.0",
-    "swiper": "^5.3.6"
+    "swiper": "^6.5.1"
   }
 }
